@@ -23,6 +23,10 @@ module.exports = () => {
         swSrc: './src-sw.js',
         swDest: 'src-sw.js',
       }),
+      new HtmlWebpackPlugin({
+        template: './index.html',
+        title: 'Contact Cards'
+      }),
       // manifest file
       new WebpackPwaManifest({
         fingerprints: false,
