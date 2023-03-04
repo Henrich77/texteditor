@@ -23,17 +23,17 @@ module.exports = () => {
         swSrc: './src-sw.js',
         swDest: 'src-sw.js',
       }),
-      new HtmlWebpackPlugin({
+        new HtmlWebpackPlugin({
         template: './index.html',
-        title: 'Contact Cards'
+        title: 'Jate'
       }),
       // manifest file
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
-        name: 'Contact Cards',
-        short_name: 'Contact',
-        description: 'Never forget your contacts!',
+        name: 'Jate',
+        short_name: 'Jate',
+        description: 'text editor!',
         background_color: '#225ca3',
         theme_color: '#225ca3',
         start_url: './',
